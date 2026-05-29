@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 20px;
 }
 
 @keyframes gradientShift {
@@ -29,15 +30,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
 }
 
 .card {
@@ -67,20 +59,14 @@ body {
 }
 
 .photo {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 20px;
   border: 5px solid #ff69b4;
   box-shadow: 0 10px 30px rgba(255, 105, 180, 0.5),
-              0 0 20px rgba(100, 200, 255, 0.3),
-              inset 0 0 10px rgba(255, 255, 255, 0.3);
+              0 0 20px rgba(100, 200, 255, 0.3);
   object-fit: cover;
   animation: scaleIn 0.6s ease-out;
-  transition: transform 0.3s ease;
-}
-
-.photo:hover {
-  transform: scale(1.05);
 }
 
 @keyframes scaleIn {
@@ -91,7 +77,6 @@ body {
 .emoji-top, .emoji-bottom {
   font-size: 1.8em;
   margin-bottom: 20px;
-  animation: spin 3s linear infinite;
   letter-spacing: 5px;
 }
 
@@ -100,32 +85,21 @@ body {
   margin-bottom: 0;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 .graffiti {
-  font-size: 3em;
-  background: linear-gradient(90deg, #ff6b6b, #ffd700, #00ff00, #00ffff, #ff69b4);
+  font-size: 2.8em;
+  background: linear-gradient(90deg, #00d4ff, #ff69b4, #ffd700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 10px;
   font-weight: bold;
   text-shadow: 2px 2px 8px rgba(255, 105, 180, 0.3);
-  animation: rainbow 3s linear infinite;
-}
-
-@keyframes rainbow {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
 }
 
 .name {
   font-size: 2.2em;
   color: #ff1493;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   animation: pulse 2s ease-in-out infinite;
@@ -139,7 +113,7 @@ body {
 .agenda {
   text-align: center;
   font-size: 1.15em;
-  line-height: 2;
+  line-height: 2.2;
   color: #333;
 }
 
@@ -157,11 +131,12 @@ body {
 .agenda p {
   margin: 12px 0;
   font-weight: 600;
+  font-size: 1.1em;
 }
 
 .icon {
-  font-size: 1.3em;
-  margin-right: 8px;
+  font-size: 1.4em;
+  margin-right: 12px;
   animation: bounce-emoji 1s ease-in-out infinite;
 }
 
@@ -200,7 +175,6 @@ body {
 }
 
 .note {
-  font-style: italic;
   color: #ff1493;
   font-weight: bold;
   margin-top: 20px;
